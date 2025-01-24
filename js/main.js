@@ -1,4 +1,5 @@
 let x = +prompt("choose a number pls <3");
+// تابع تشخیص اول بودن یا نبودن
 function Prime(n) {
   let f = 0;
   for (let i = 1; i <= n; i++) {
@@ -17,3 +18,14 @@ function Prime(n) {
   }
 }
 Prime(x);
+// تابع تشخیص فاکتوریل
+function factorial(number) {
+  let res = 1;
+  for (i = 1; i <= number; i++) {
+    res *= i;
+  }
+  return res;
+}
+let finall = factorial(x);
+let w = document.getElementById("find");
+w.innerHTML += `<h2>the factorial of the chosen number is ${finall}</h2>`;
